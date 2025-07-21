@@ -1,0 +1,105 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0d0d0d, #1e1e1e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(90deg, #ffcc00, #ff6600);
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #1b1b1b;
+    text-shadow: 1px 1px 2px #fff000;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+}
+
+/* CONTAINER DE PERSONAGENS */
+main {
+    flex: 1;
+    max-width: 1300px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.card {
+    background-color: #222;
+    border: 2px solid #ff9000;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px #ff990033;     
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffa50088;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 3px solid #ffcc00;
+    padding: 10px;    
+}
+
+.card h2 {
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    color: #ffcc00;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 0.3rem;
+}
+
+/* MENSAGEM DE LOADING */
+.mensagem {
+    color: #aaa;
+    text-align: center;
+    font-size: 1rem;
+    grid-column: 1 / -1;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    background: #111;
+    color: #777;
+}
+
+footer span {
+    color: #ff9900;
+}
